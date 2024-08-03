@@ -209,7 +209,7 @@ const Navbar: React.FC = () => {
                         {isClient && (
                             <Link to="/cart" className='action-btn'>
                                 <div className="cart-icon-container">
-                                    <img src={cartIcon} alt="Cart" className="cart-icon" />
+                                    <img src={cartIcon} width={20} alt="Cart" className="cart-icon" />
                                     {cartCount > 0 && <span className="cart-count">{cartCount}</span>}
                                 </div>
                             </Link>
@@ -220,7 +220,7 @@ const Navbar: React.FC = () => {
 
                                 <Link to="/favorites" className='action-btn'>
                                     <div className={`cart-icon-container ${favoriteUpdate ? 'text-red-600' : ''}`}>
-                                        {favoriteUpdate ? <Favorite style={{ color: 'red' }} /> : <FavoriteBorder style={{ color: 'black' }} />}
+                                        {favoriteUpdate ? <Favorite  style={{ color: 'red' }} /> : <FavoriteBorder style={{ color: 'black' }} />}
                                         Favorite
                                     </div>
                                 </Link>
@@ -273,7 +273,7 @@ const Navbar: React.FC = () => {
 
                                 <Link to="/favorites" className='action-btn'>
                                     <div className={`cart-icon-container ${favoriteUpdate ? 'text-red-600' : ''}`}>
-                                        {favoriteUpdate ? <Favorite style={{ color: 'red' }} /> : <FavoriteBorder style={{ color: 'black' }} />}
+                                        {favoriteUpdate ? <Favorite style={{ color: 'red' , fontSize: 18 }} /> : <FavoriteBorder style={{ color: 'black' , fontSize: 18 }} />}
                                     </div>
                                 </Link>
 
